@@ -1,33 +1,196 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- sanitize.cssはリセットcss -->
-    <link rel="stylesheet" href="sanitize.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>基礎コース成果発表</title>
-  </head>
+* body{
+  margin: 0;
+  width: 100%;
+  /* max-width: 1000px;
+  padding: 0px;
+  background-color: #91bf34;
+  color: #0bab7b;
+  font-size: 15px;
+  line-height: 2; */
+}
 
-  <body id="index">
-       <header>
-      <nav>
-        <ul class="global-nav">
-          <li><a href="1_index.html">HOME</a></li>
-          <li><a href="2_about.html">DIGとは</a></li>
-          <li><a href="3_kiso.html">基礎コース</a></li>
-          <li><a href="D1_programming_basic.html">演習ノート</a></li>
-          <li><a href="https://typing.twi1.me/game/139848">タイピング練習</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- <div id="wrap">
-      <div class="content"></div>
-    </div> -->
+a {
+  color: white;
+  margin-right: 55px;
+  text-decoration: none;
+}
 
-    <!-- <footer>
-      <small>(C)2023 Maiko-Inagaki.</small>
-    </footer> -->
-  </body>
-</html>
+/* a:visited {
+  color: #410cff;
+} */
+
+a:hover {
+  color: #04023d;
+  text-decoration: underline;
+}
+
+header{
+  /* height: 60px; */
+  padding: 0px 0px;
+  /* position:fixed */
+}
+
+.global-nav {
+  height: 50px;
+  padding: 0px 10px;
+  display: flex;
+  background-color: #9f9e9e;
+  /* background-clip: content-box; */
+  /* position:fixed; */
+  /* top: 10px; */
+  margin: auto;
+  margin-top: 10px;
+  width: 1000px;
+  /* position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); */
+}
+
+ul {
+  /* display: flex; */
+  background-color: #9f9e9e;
+  /* margin-top: 15px; */
+}
+
+li {
+  list-style: none;
+  padding: 10px 15px;
+}
+
+/* #wrap {
+  clear: both;
+} */
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  max-width: 90%;
+}
+/* ↑↑↑↑↑　全ページ共通の設定ここまで　↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓　indexページの設定　　　　   ↓↓↓↓↓ */
+#index {
+  background-image: url("img/top.png");
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+
+
+/* ↓↓↓↓↓　aboutページの設定　　　　   ↓↓↓↓↓ */
+#about{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+  line-height: 2;
+}
+
+
+
+
+/* ↓↓↓↓↓　kisoページの設定　　　　   ↓↓↓↓↓ */
+#kiso {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+  line-height: 2;
+}
+
+
+
+/* ↓↓↓↓↓　exercisesページの設定　　   ↓↓↓↓↓ */
+#exercises {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.main{
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+}
+
+.sidebar{
+  width: 280px;
+  float: right;
+}
+
+#list{
+  padding: 2px ;
+}
+
+#window{
+  padding: 5px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ol, ul { list-style: none;} */
+
+/* 以下、アコーディオンの設定 */
+.listabc {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+  padding:0;
+  
+}
+
+.listabc .list-item .list-tit {
+  padding: 0.5rem 0.5rem 0.5rem 1rem ;
+  background-color: #D8D8D8;
+  margin:0;
+  border-radius: 5px;
+}
+
+.listabc .list-item .list-content {
+  line-height: 1.5;
+  height: 0rem;
+  overflow: hidden;
+  transition: height 0.5s ease 0s, padding 0.5s ease 0s;
+  margin:0 0 10px 0;
+  background-color:red;
+}
+
+.listabc .list-item .list-content .list-txt {
+  padding: 1rem;
+}
