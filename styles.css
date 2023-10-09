@@ -1,148 +1,33 @@
-* {
-  /* デフォルトをリセット */
-  margin: 0px;
-  padding: 0px;
-}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- sanitize.cssはリセットcss -->
+    <link rel="stylesheet" href="sanitize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>基礎コース成果発表</title>
+  </head>
 
-/* --------------------bodyのタグ-------------------- */
-/*body {
-  margin: 1% 1% 1% 1%;
-  padding: 1%;
-  min-height: 100vh;
-  display: grid;
-  grid-template:
-    "header"
-    "main" 1fr
-    "footer";
-}*/
+  <body id="index">
+       <header>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="1_index.html">HOME</a></li>
+          <li><a href="2_about.html">DIGとは</a></li>
+          <li><a href="3_kiso.html">基礎コース</a></li>
+          <li><a href="D1_programming_basic.html">演習ノート</a></li>
+          <li><a href="https://typing.twi1.me/game/139848">タイピング練習</a></li>
+        </ul>
+      </nav>
+    </header>
 
-/* --------------------headerのタグ-------------------- */
-nav {
-  padding: 1px 10px;
-  height: 60px;
-  background-color: #838282b7;
-  padding-top: 5px;
-  box-sizing: border-box;
-  position:fixed;
-  top: 0px;
-  left: 10px;
-  right: 10px;
-}
+    <!-- <div id="wrap">
+      <div class="content"></div>
+    </div> -->
 
-ul {
-  display: flex;
-  margin-top: 10px;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin-right: 55px;
-}
-
-a:hover {
-  color: rgb(182, 21, 197);
-}
-
-/* --------------------mainのタグ-------------------- */
-main {
-  padding: 1px 10px;
-  /* position: relative; */
-}
-
-
-
-
-
-
-
-
-
-main.top {
-  background-image: url(https://toyotajp.sharepoint.com/:u:/r/sites/msteams_b01891/Shared%20Documents/General/DIG_FND_20/DAY20/img/bg.webp?csf=1&web=1&e=cx92Qm);
-  width: 100%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); 
-  /* margin-left: auto;
-  margin-right: auto; */
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-}
-
-/* 見出しタグ */
-h1 {
-  color: #e9b824;
-  text-align: center; /*テキストの位置*/
-  border: solid 1.5px #e9b824; /*線の形状、太さ、色*/
-  background-color: #12486b;
-  border-radius: 0.5em; /*角の丸み*/
-}
-
-/* 記事や文章のタグ */
-article {
-  padding: 0.5em; /*余白*/
-  background-color: #ffc; /*背景色*/
-  border: solid 1px #333333; /*境界線 太さ 色*/
-  border-radius: 0.5em; /*角の丸み*/
-}
-
-/* 小見出しタグ */
-main h2,
-h3 {
-  border-bottom: solid 1px red; /*底の線、太さ、色*/
-  padding-left: 1em; /*左の余白*/
-}
-
-main p {
-  margin-top: 1em; /*トップ余白*/
-  margin-bottom: 0.5em; /*ボトム余白*/
-}
-
-strong.red {
-  color: red;
-}
-
-strong.blue {
-  color: blue;
-}
-
-section.p1 {
-  margin-top: 1em; /*トップ余白*/
-  padding: 0.5em; /*余白*/
-  background-color: #e6e6e6; /*背景色*/
-  border: solid 1px #333333; /*境界線 太さ 色*/
-  border-radius: 0.5em; /*角の丸み*/
-}
-
-strong.yellow {
-  background: linear-gradient(transparent 0%, #f6ff5f 0%);
-}
-
-img {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-}
-
-main p.bottom {
-  /*ボトムを詰める時*/
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-/* レスポンシブ対応 */
-/* @media screen and (max-width: 767px) {
-  .headerB {
-    display: none;
-  }
-}
- */
+    <!-- <footer>
+      <small>(C)2023 Maiko-Inagaki.</small>
+    </footer> -->
+  </body>
+</html>
