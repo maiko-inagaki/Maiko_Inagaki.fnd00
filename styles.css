@@ -87,7 +87,7 @@ img {
 #index {
   background-image: url("img/top.png");
   background-repeat: no-repeat;
-  /* background-position: center center; */
+  background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   
