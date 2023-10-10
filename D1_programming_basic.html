@@ -190,7 +190,7 @@
         padding: 0.1px 10px;
         border-left-width: 5px;
         border-left-style: solid;
-		border-radius: 3px;
+        border-radius: 3px;
       }
 
       code {
@@ -431,8 +431,6 @@
         font-size: inherit;
       }
 
-      
-
       /* Page Break : use <div class="page"/> to insert page break
 -------------------------------------------------------- */
       .page {
@@ -447,11 +445,13 @@
     <header>
       <nav>
         <ul class="global-nav">
-          <li><a href="index.html">HOME</a></li>
+          <li><a href="1_index.html">HOME</a></li>
           <li><a href="2_about.html">DIGとは</a></li>
           <li><a href="3_kiso.html">基礎コース</a></li>
           <li><a href="D1_programming_basic.html">演習ノート</a></li>
-          <li><a href="https://typing.twi1.me/game/139848">タイピング練習</a></li>
+          <li>
+            <a href="https://typing.twi1.me/game/139848">タイピング練習</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -469,187 +469,177 @@
 
     <div class="main">
       <h1
-        id="%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%9F%BA%E7%A4%8E"
-      >
+        id="%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%9F%BA%E7%A4%8E">
         プログラミングの基礎
       </h1>
 
-      <!-- ![js基礎](image-11.png)
-![用語](image-12.png)
-![データ型](image-13.png)
-![算術演算子](image-14.png)
-![式](image-15.png) -->
-
       <h2 id="%E5%9F%BA%E7%A4%8E%E6%BC%94%E7%BF%92">基礎演習</h2>
 
-      <h3 class=".accordion_tab">
-        以下の3つを自分の言葉で定義してみてください。
-      </h3>
+      <div class="accordion">
+        <h3 class="menu js-menu">
+          以下の3つを自分の言葉で定義してみてください。
+        </h3>
 
-      <div class=".accordion_content">
-      <p>expression（式）</p>
-      <blockquote>
-        <p>値を導き出すためのひとまとまりのコードのこと</p>
-      </blockquote>
-      <p>operator（演算子）</p>
-      <blockquote>
-        <p>
-          値を導き出すために必要なもの<br />
-          算術演算子 + * など<br />
-          比較演算子 ==　&lt; など<br />
-          倫理演算子　and　OR など
-        </p>
-      </blockquote>
-      <p>type（データ型）</p>
-      <blockquote>
-        <p>
-          データのカテゴリのこと<br />
-          （数値型number、文字列型string、真偽値型booleanなど）
-        </p>
-      </blockquote>
-    </div>
+        <div class="contents">
+          <p>expression（式）</p>
+          <blockquote>
+            <p>値を導き出すためのひとまとまりのコードのこと</p>
+          </blockquote>
+          <p>operator（演算子）</p>
+          <blockquote>
+            <p>
+              値を導き出すために必要なもの<br />
+              算術演算子 + * など<br />
+              比較演算子 ==　&lt; など<br />
+              倫理演算子　and　OR など
+            </p>
+          </blockquote>
+          <p>type（データ型）</p>
+          <blockquote>
+            <p>
+              データのカテゴリのこと<br />
+              （数値型number、文字列型string、真偽値型booleanなど）
+            </p>
+          </blockquote>
+        </div>
 
+        <h2 id="number%E6%95%B0%E5%80%A4%E5%9E%8B">【number（数値型）】</h2>
 
+        <h3 class="menu js-menu">
+          1.Google Chrome のコンソールに 1
+          行ずつ、以下の式を入力してみましょう。それぞれ何が起こるでしょうか。
+        </h3>
 
+        <div class="contents">
+          <blockquote>
+            <p>
+              4 + 10;　=&gt; 10<br />
+              1 * 3; =&gt; 3<br />
+              12 * 4; =&gt; 3<br />
+              4 % 2; =&gt; 0<br />
+              5 % 2; =&gt; 1<br />
+              5 / 1 - 99; =&gt; -94<br />
+              5000 * -100 * (1 + 2) * (5 * 6); =&gt; -45000000<br />
+              1241 / 9 + 99; =&gt; 236.88888888888889
+            </p>
+          </blockquote>
+          <p>
+            <span style="color: #fd7e00"
+              >※式の終わりはすべてセミコロンで終了していること</span
+            >
+          </p>
+        </div>
 
-      <h2 id="number%E6%95%B0%E5%80%A4%E5%9E%8B">【number（数値型）】</h2>
-      <h3 class=".accordion_tab">
-        1.Google Chrome のコンソールに 1
-        行ずつ、以下の式を入力してみましょう。それぞれ何が起こるでしょうか。
-      </h3>
-      <div class=".accordion_content">
-      <blockquote>
-        <p>
-          4 + 10;　=&gt; 10<br />
-          1 * 3; =&gt; 3<br />
-          12 * 4; =&gt; 3<br />
-          4 % 2; =&gt; 0<br />
-          5 % 2; =&gt; 1<br />
-          5 / 1 - 99; =&gt; -94<br />
-          5000 * -100 * (1 + 2) * (5 * 6); =&gt; -45000000<br />
-          1241 / 9 + 99; =&gt; 236.88888888888889
-        </p>
-      </blockquote>
-        <p>
-        <span style="color: #fd7e00"
-          >※式の終わりはすべてセミコロンで終了していること</span
-        >
-      </p>
-    </div>
+        <h3 class="menu js-menu">2.% 演算子は何をしますか？</h3>
 
+        <div class="contents">
+          <blockquote>
+            <p>割り算の余り</p>
+          </blockquote>
+        </div>
 
+        <h3 class="menu js-menu">
+          3.コンソールを使ってあなたの年齢を分単位で計算してみましょう。ここでは誕生日から今日までの日数までは計算に入れなくてよいことにして、例えば
+          20 歳ならば 20 年を分単位で表してみてください。
+        </h3>
 
+        <div class="contents">
+          <blockquote>
+            <p>40 * 365 * 24 * 60 =&gt; 21024000</p>
+          </blockquote>
+        </div>
 
+        <h2 id="string%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B">
+          string（文字列型）
+        </h2>
 
+        <h3 class="menu js-menu">
+          1.コンソール上にて、自分の名前を string（文字列型）
+          で入力してみましょう。
+        </h3>
 
+        <div class="contents">
+          <blockquote>
+            <p>&quot;maiko inagaki&quot;</p>
+          </blockquote>
+        </div>
 
+        <h3 class="menu js-menu">
+          2.+ 演算子を使って、複数の文字列を concatenate
+          （結合）してみましょう。
+        </h3>
 
-      <h3 class=".accordion_tab">
-        2.% 演算子は何をしますか？
-      </h3>
+        <div class="contents">
+          <blockquote>
+            <p>&quot;super&quot; + &quot; beaber&quot; =&gt; 'super beaber'</p>
+          </blockquote>
+        </div>
 
+        <h3>やってみよう！</h3>
 
-      <div class=".accordion_content">
-      <blockquote>
-        <p>割り算の余り</p>
-      </blockquote>
+        <h3 class="menu js-menu">
+          1.文字列型（string）の値 と 数値型（number）の値
+          を足したらどうなりますか？
+        </h3>
+
+        <div class="contents">
+          <blockquote>
+            <p>&quot;abc&quot; + 150 =&gt; 'abc150'</p>
+          </blockquote>
+        </div>
+
+        <h3 class="menu js-menu">
+          2.その順番を逆にしたらどうなりますか (例 数値型（number） +
+          文字列型（string）)？
+        </h3>
+
+        <div class="contents">
+          <blockquote>
+            <p>150 + &quot;abc&quot; =&gt; '150abc'</p>
+          </blockquote>
+        </div>
+
+        <h3 class="menu js-menu">
+          3.数値型（number） の 5 に 文字列型（string） の &quot;5&quot;
+          を掛け算するとどうなりますか？
+        </h3>
+
+        <div class="contents">
+          <blockquote>
+            <p>5 * &quot;5&quot; =&gt; 25</p>
+          </blockquote>
+        </div>
+
+        <h3 class="menu js-menu">
+          4.コンソールに 1 行ずつ、以下の式を入力してみましょう。.length
+          を追加するとどうなると思いますか？
+          ほかの文字列の長さも確認してみましょう。
+        </h3>
+
+        <div class="contents">
+          <blockquote>
+            <p>
+              &quot;hello&quot;.length; =&gt; 5<br />
+              &quot;hello world&quot;.length; =&gt; 11<br />
+              &quot;123&quot;.length; =&gt; 3<br />
+              &quot;hello&quot;.toUpperCase(); =&gt; 'HELLO' 大文字に変わった<br />
+              &quot;HELLO&quot;.toLowerCase();　=&gt; 'hello'
+              小文字に変わった<br />
+              &quot;hello&quot;.endsWith(&quot;o&quot;);　=&gt; true
+              文字列の後方ががoかどうか真偽を調べた<br />
+              &quot;hello&quot;.endsWith(&quot;e&quot;);　=&gt; false
+              文字列の後方がeかどうか審議を調べた<br />
+              &quot;hello&quot;.endsWith(&quot;llo&quot;);　=&gt;　true　文字列の後方がlloで終わっているか真偽を調べた<br />
+              &quot;hello&quot;.endsWith();　=&gt;false
+              文字列の後方の文字を知らべるメソッドだか引数が空白
+            </p>
+          </blockquote>
+        </div>
       </div>
-
-
-
-   <h3 class=".accordion_tab">
-        3.コンソールを使ってあなたの年齢を分単位で計算してみましょう。ここでは誕生日から今日までの日数までは計算に入れなくてよいことにして、例えば
-        20 歳ならば 20 年を分単位で表してみてください。
-      </h3>
-
-
-      <div class=".accordion_content">
-      <blockquote>
-        <p>40 * 365 * 24 * 60 =&gt; 21024000</p>
-      </blockquote>
-      </div>
-
-      <h2 id="string%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B">
-        string（文字列型）
-      </h2>
-      <h3
-        id="1%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E4%B8%8A%E3%81%AB%E3%81%A6%E8%87%AA%E5%88%86%E3%81%AE%E5%90%8D%E5%89%8D%E3%82%92-string%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8B-%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%97%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86"
-      >
-        1.コンソール上にて、自分の名前を string（文字列型）
-        で入力してみましょう。
-      </h3>
-      <blockquote>
-        <p>&quot;maiko inagaki&quot;</p>
-      </blockquote>
-      <h3
-        id="2-%E6%BC%94%E7%AE%97%E5%AD%90%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E6%96%87%E5%AD%97%E5%88%97%E3%82%92-concatenate-%E7%B5%90%E5%90%88%E3%81%97%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86"
-      >
-        2.+ 演算子を使って、複数の文字列を concatenate （結合）してみましょう。
-      </h3>
-      <blockquote>
-        <p>&quot;super&quot; + &quot; beaber&quot; =&gt; 'super beaber'</p>
-      </blockquote>
-      <h3 id="%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86">
-        やってみよう！
-      </h3>
-      <h3
-        id="1%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8Bstring%E3%81%AE%E5%80%A4-%E3%81%A8-%E6%95%B0%E5%80%A4%E5%9E%8Bnumber%E3%81%AE%E5%80%A4-%E3%82%92%E8%B6%B3%E3%81%97%E3%81%9F%E3%82%89%E3%81%A9%E3%81%86%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%8B"
-      >
-        1.文字列型（string）の値 と 数値型（number）の値
-        を足したらどうなりますか？
-      </h3>
-      <blockquote>
-        <p>&quot;abc&quot; + 150 =&gt; 'abc150'</p>
-      </blockquote>
-      <h3
-        id="2%E3%81%9D%E3%81%AE%E9%A0%86%E7%95%AA%E3%82%92%E9%80%86%E3%81%AB%E3%81%97%E3%81%9F%E3%82%89%E3%81%A9%E3%81%86%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%8B-%E4%BE%8B-%E6%95%B0%E5%80%A4%E5%9E%8Bnumber--%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8Bstring"
-      >
-        2.その順番を逆にしたらどうなりますか (例 数値型（number） +
-        文字列型（string）)？
-      </h3>
-      <blockquote>
-        <p>150 + &quot;abc&quot; =&gt; '150abc'</p>
-      </blockquote>
-      <h3
-        id="3%E6%95%B0%E5%80%A4%E5%9E%8Bnumber-%E3%81%AE-5-%E3%81%AB-%E6%96%87%E5%AD%97%E5%88%97%E5%9E%8Bstring-%E3%81%AE-%225%22-%E3%82%92%E6%8E%9B%E3%81%91%E7%AE%97%E3%81%99%E3%82%8B%E3%81%A8%E3%81%A9%E3%81%86%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%81%8B"
-      >
-        3.数値型（number） の 5 に 文字列型（string） の &quot;5&quot;
-        を掛け算するとどうなりますか？
-      </h3>
-      <blockquote>
-        <p>5 * &quot;5&quot; =&gt; 25</p>
-      </blockquote>
-      <h3
-        id="4%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E3%81%AB-1-%E8%A1%8C%E3%81%9A%E3%81%A4%E4%BB%A5%E4%B8%8B%E3%81%AE%E5%BC%8F%E3%82%92%E5%85%A5%E5%8A%9B%E3%81%97%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86length-%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B%E3%81%A8%E3%81%A9%E3%81%86%E3%81%AA%E3%82%8B%E3%81%A8%E6%80%9D%E3%81%84%E3%81%BE%E3%81%99%E3%81%8B-%E3%81%BB%E3%81%8B%E3%81%AE%E6%96%87%E5%AD%97%E5%88%97%E3%81%AE%E9%95%B7%E3%81%95%E3%82%82%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86"
-      >
-        4.コンソールに 1 行ずつ、以下の式を入力してみましょう。.length
-        を追加するとどうなると思いますか？
-        ほかの文字列の長さも確認してみましょう。
-      </h3>
-      <blockquote>
-        <p>
-          &quot;hello&quot;.length; =&gt; 5<br />
-          &quot;hello world&quot;.length; =&gt; 11<br />
-          &quot;123&quot;.length; =&gt; 3<br />
-          &quot;hello&quot;.toUpperCase(); =&gt; 'HELLO' 大文字に変わった<br />
-          &quot;HELLO&quot;.toLowerCase();　=&gt; 'hello' 小文字に変わった<br />
-          &quot;hello&quot;.endsWith(&quot;o&quot;);　=&gt; true
-          文字列の後方ががoかどうか真偽を調べた<br />
-          &quot;hello&quot;.endsWith(&quot;e&quot;);　=&gt; false
-          文字列の後方がeかどうか審議を調べた<br />
-          &quot;hello&quot;.endsWith(&quot;llo&quot;);　=&gt;　true　文字列の後方がlloで終わっているか真偽を調べた<br />
-          &quot;hello&quot;.endsWith();　=&gt;false
-          文字列の後方の文字を知らべるメソッドだか引数が空白
-        </p>
-      </blockquote>
     </div>
 
     <div id="wrap" class="clearfix">
       <div class="content">
-        <!-- <div class="main">
-          <h1>演習ノート</h1>
-          <p>これまでに撮影した写真や映像作品を掲載しています。</p>
-        </div> -->
         <aside class="sidebar">
           <section>
             <h2>一覧</h2>
@@ -665,15 +655,3 @@
     <script type="text/javascript" src="dig_fnd.js"></script>
   </body>
 </html>
-
-
-<!-- <ul class="listabc">
-   list-item 1つ目 
-  <li class="list-item">
-    <h3 class="list-tit">sample1</h3>
-    <div class="list-content">
-      <p class="list-txt">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quia sunt accusantium repellat minus optio amet, eligendi aliquid dolore ex voluptatibus deserunt consequatur sint ducimus sequi obcaecati cum nemo quisquam?
-      </p>
-    </div>
-  </li> -->
